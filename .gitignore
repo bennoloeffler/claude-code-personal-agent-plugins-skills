@@ -1,0 +1,23 @@
+# Runtime state from the heartbeat-timer plugin (do not commit)
+.heartbeat-timer/
+timer.md
+
+# Lock files written by plugins
+*.lock
+
+# Node dependencies (each MCP server must run `bun install` / `npm install`)
+node_modules/
+
+# Per-user config and secrets (never commit)
+.env
+.env.local
+*.secrets.env
+*-auth.json
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+todo-ideas/plugins/heartbeat-timer/PORT_NOTES.md
+

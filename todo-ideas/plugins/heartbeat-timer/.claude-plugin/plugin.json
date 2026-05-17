@@ -1,0 +1,7 @@
+{
+  "name": "heartbeat-timer",
+  "description": "Self-ticking cron replacement for Claude Code. Define recurring prompts in timer.md; a bundled MCP server fires them into your session as <channel source=\"heartbeat\"> events.",
+  "version": "0.1.0",
+  "license": "MIT",
+  "keywords": ["timer", "cron", "scheduler", "heartbeat", "mcp"]
+}

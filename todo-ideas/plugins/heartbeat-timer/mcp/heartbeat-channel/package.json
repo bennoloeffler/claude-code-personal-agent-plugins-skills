@@ -1,0 +1,10 @@
+{
+  "name": "heartbeat-channel",
+  "version": "0.1.0",
+  "description": "MCP Channel Server: ticks every minute, reads timer.md, pushes due entries as claude/channel notifications.",
+  "type": "module",
+  "private": true,
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
