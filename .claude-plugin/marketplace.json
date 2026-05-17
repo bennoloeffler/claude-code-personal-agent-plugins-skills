@@ -1,0 +1,33 @@
+{
+  "name": "ai-plugins",
+  "metadata": {
+    "version": "0.1.0",
+    "description": "Plugins and skills to run Claude Code as a 24/7 personal assistant — email, calendar, files, timers, image/diagram/slide-deck generation. Every plugin and skill in this marketplace starts with the ai- prefix so users can find them in one cluster via /ai-<TAB>."
+  },
+  "owner": {
+    "name": "claude-code-personal-agent-plugins-skills"
+  },
+  "plugins": [
+    {
+      "name": "ai-heartbeat-timer",
+      "source": "./plugins/ai-heartbeat-timer",
+      "description": "Self-ticking cron replacement for Claude Code. Define recurring prompts in timer.md; a bundled MCP server fires them into your session as <channel source=\"heartbeat\"> events. Includes the /ai-timer skill for natural-language timer management."
+    },
+    {
+      "name": "ai-ms365",
+      "source": "./plugins/ai-ms365",
+      "description": "Microsoft 365 (Outlook, Calendar, Teams, SharePoint, OneDrive) via @softeria/ms-365-mcp-server. Cross-platform npx wrapper. User supplies their own Azure AD credentials at ~/.claude/.env/ms365.env."
+    },
+    {
+      "name": "ai-create",
+      "source": "./",
+      "description": "Image / diagram / slide-deck generation. Bundles four skills: ai-create-image (gpt-image-1), ai-create-image-set (consistent series for slide backgrounds), ai-create-diagram (D2 → SVG/PNG), ai-create-slide-deck-variants (10 HTML deck aesthetics built on Reveal.js + WebSlides). User supplies their own OpenAI API key at ~/.claude/.env/ai-create-image.env / ai-create-image-set.env.",
+      "skills": [
+        "./skills/ai-create-diagram",
+        "./skills/ai-create-image",
+        "./skills/ai-create-image-set",
+        "./skills/ai-create-slide-deck-variants"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "style": "editorial-photo",
+  "size": "1536x1024",
+  "quality": "medium",
+  "out_dir": "img/backgrounds/ai",
+  "slots": [
+    { "name": "bg-cover",
+      "prompt": "A wide, atmospheric shot of an empty modern consulting workshop room at golden hour, long wooden table, big windows, warm light streaming in, subtle whiteboard with abstract diagrams in background, anticipation before a strategy session." },
+    { "name": "bg-closing",
+      "prompt": "A wide horizon shot at dusk, a single path leading into a clear open landscape, warm gold sky transitioning to cool blue, conveying forward motion and clarity, minimal, no people, contemplative." }
+  ]
+}

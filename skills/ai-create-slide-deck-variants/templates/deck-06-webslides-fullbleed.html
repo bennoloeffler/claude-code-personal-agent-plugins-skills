@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategie 2026 — Full-bleed (WebSlides)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webslides/webslides@1.5.0/static/css/webslides.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webslides/webslides@1.5.0/static/css/svg-icons.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600&display=swap">
+<style>
+  :root { --acc: #ffb949; --ink: #0a0a0a; }
+  body, html { font-family: 'Inter', system-ui, sans-serif; }
+  #webslides section { color: #fff; }
+  #webslides section h1, #webslides section h2, #webslides section h3 { font-family: 'Playfair Display', Georgia, serif; font-weight: 900; letter-spacing: -0.02em; line-height: 1; margin: 0; text-shadow: 0 1px 18px rgba(0,0,0,0.55), 0 0 2px rgba(0,0,0,0.3); }
+  .frame > .wrap { max-width: 1200px; padding: 0 5%; }
+  .hero-bg { position: relative; }
+  .hero-bg .background.dark::after {
+    content: ''; position: absolute; inset: 0;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 38%, rgba(0,0,0,0.1) 60%, transparent 80%),
+      linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.5) 100%);
+  }
+  .kicker { display: inline-block; font-size: clamp(11px, 0.85vw, 14px); letter-spacing: 0.3em; text-transform: uppercase; padding: 6px 14px; border: 1px solid rgba(255,255,255,0.55); border-radius: 100px; margin-bottom: 16px; backdrop-filter: blur(6px); background: rgba(0,0,0,0.25); }
+  .accent { color: var(--acc); }
+  .lead { font-size: clamp(17px, 1.4vw, 24px); max-width: 28ch; font-weight: 400; opacity: 1; line-height: 1.5; margin: 0; text-shadow: 0 1px 12px rgba(0,0,0,0.6); }
+  .brand-strip { position: absolute; top: 24px; left: 5%; right: 5%; display: flex; justify-content: space-between; font-size: clamp(10px, 0.75vw, 13px); letter-spacing: 0.3em; text-transform: uppercase; opacity: 0.85; z-index: 10; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .num { position: absolute; bottom: 24px; right: 5%; font-size: clamp(10px, 0.7vw, 13px); letter-spacing: 0.25em; opacity: 0.7; z-index: 10; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(12px, 1.3vw, 22px); }
+  .card { padding: clamp(14px, 1.3vw, 22px); background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 8px; backdrop-filter: blur(8px); }
+  .card h3 { font-family: 'Playfair Display', serif; font-size: clamp(16px, 1.4vw, 24px); margin: 0 0 6px 0; color: var(--acc); line-height: 1.1; }
+  .card p { font-size: clamp(13px, 1vw, 17px); margin: 0; opacity: 0.92; line-height: 1.5; }
+  .big-num { font-family: 'Playfair Display', serif; font-size: clamp(64px, 6.5vw, 110px); color: var(--acc); line-height: 1; font-weight: 900; text-shadow: 0 2px 24px rgba(0,0,0,0.55); }
+  section h2 { font-size: clamp(46px, 5vw, 78px); }
+  section h1 { font-size: clamp(60px, 7vw, 112px); }
+  ul.clean { list-style: none; padding: 0; margin: 0; }
+  ul.clean li { padding-left: 22px; margin-bottom: 10px; position: relative; font-size: clamp(15px, 1.2vw, 20px); text-shadow: 0 1px 10px rgba(0,0,0,0.55); }
+  ul.clean li::before { content: '—'; position: absolute; left: 0; color: var(--acc); }
+</style>
+</head>
+<body>
+<main role="main">
+<article id="webslides" class="vertical">
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-cover.jpg');"></span>
+  <div class="brand-strip"><span>Your Company</span><span>Strategiebild 2026</span></div>
+  <div class="wrap aligncenter" style="padding-top: 6rem;">
+    <span class="kicker">Strategie · Mai 2026</span>
+    <h1>Wo wir herkommen.<br>Wo wir stehen.<br><span class="accent">Wohin wir gehen.</span></h1>
+    <p class="lead" style="margin: 28px auto 0;">Drei Akte. Zehn Bewegungen.</p>
+  </div>
+  <div class="num">01 / 16</div>
+</section>
+
+<section class="bg-black">
+  <div class="brand-strip"><span>Your Company 2026</span><span>Inhalt</span></div>
+  <div class="wrap">
+    <span class="kicker accent">Übersicht</span>
+    <h2>Drei Akte.<br>Zehn Bewegungen.</h2>
+    <div class="grid-3" style="margin-top: 40px;">
+      <div class="card"><h3>I — Historie</h3><p>Lean · OKR · Agile · Our Method</p></div>
+      <div class="card"><h3>II — Heute</h3><p>Sechs Felder · drei Firmen · zwei Menschen</p></div>
+      <div class="card"><h3>III — Zukunft</h3><p>Competition · Systems Design · Innovation · Vision</p></div>
+    </div>
+  </div>
+  <div class="num">02 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-historie-lean.jpg');"></span>
+  <div class="brand-strip"><span>Historie · 01</span><span>Wegmarke</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Wegmarke 01</span>
+    <h1>Lean, Materialfluss,<br>6 Sigma — <span class="accent">und echte Workshops.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Fluss und KAIZEN-Management als Fundament — nicht als Methode auf Folie, sondern in der Halle.</p>
+  </div>
+  <div class="num">03 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-historie-ccpm.jpg');"></span>
+  <div class="brand-strip"><span>Historie · 02</span><span>Termintreue</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Wegmarke 02</span>
+    <h1>CCPM:<br>nicht Serie — <span class="accent">sondern Sonder.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Termintreue im deutschen Maschinenbau — wo jedes Projekt ein Unikat ist.</p>
+  </div>
+  <div class="num">04 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-historie-wohland.jpg');"></span>
+  <div class="brand-strip"><span>Historie · 03</span><span>Organisation</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Wegmarke 03</span>
+    <h1>Wohland —<br><span class="accent">wenn das alte Modell versagt.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Management und Organisation neu gedacht, wenn die alten Bilder die heutige Komplexität nicht mehr halten.</p>
+  </div>
+  <div class="num">05 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-historie-agile.jpg');"></span>
+  <div class="brand-strip"><span>Historie · 04</span><span>Bewegung</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Wegmarke 04</span>
+    <h1>Agile —<br>und <span class="accent">die agile Falle.</span></h1>
+    <p class="lead" style="margin-top: 24px;">OpenSpace-Trafo statt Frameworks. Bewegung dort, wo Methodik längst zur Bremse geworden ist.</p>
+  </div>
+  <div class="num">06 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-historie-kaulquappe.jpg');"></span>
+  <div class="brand-strip"><span>Historie · 05</span><span>Unser Beitrag</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Wegmarke 05 · Eigenes</span>
+    <h1><span class="accent">Our Method.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Ein alternatives Veränderungs- und Führungsmodell. Methodenkritische Projekte mit Metaframework.</p>
+  </div>
+  <div class="num">07 / 16</div>
+</section>
+
+<section class="bg-black">
+  <div class="brand-strip"><span>Stand heute</span><span>Akt II</span></div>
+  <div class="wrap">
+    <span class="kicker accent">Akt II · Stand heute</span>
+    <h2>Sechs Felder.<br><span class="accent">Drei Firmen. Zwei Menschen.</span></h2>
+    <div class="grid-3" style="margin-top: 32px;">
+      <div class="card"><h3>Strategy</h3><p>Smart decisions solve problems — with minimal overhead.</p></div>
+      <div class="card"><h3>Service</h3><p>Mehr zufriedene Kunden und mehr Ertrag.</p></div>
+      <div class="card"><h3>Workflow</h3><p>Flow at scale.</p></div>
+      <div class="card"><h3>KI</h3><p>Produktivität statt Digitalisierung.</p></div>
+      <div class="card"><h3>(Interim · ERP)</h3><p>Wenn Führung nicht anspringt. Wenn ERP zur Bremse wird.</p></div>
+      <div class="card"><h3>Strategie-Wechsel</h3><p>G&amp;P · coolab · meocon · Marco · Kim.</p></div>
+    </div>
+  </div>
+  <div class="num">08 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-heute-oe.jpg');"></span>
+  <div class="brand-strip"><span>Today · Strategy</span><span>Feld 01</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Section · Strategy</span>
+    <h1>Mit wenig Macht.<br><span class="accent">Mit den richtigen<br>Menschen am Tisch.</span></h1>
+  </div>
+  <div class="num">09 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-heute-realean.jpg');"></span>
+  <div class="brand-strip"><span>Today · Workflow</span><span>Feld 03</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Section · Workflow</span>
+    <h1>Produkt<br><span class="accent">fließt.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Lean, wie es gemeint war — vom Materialfluss bis zur Führungslinie.</p>
+  </div>
+  <div class="num">10 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-heute-ki.jpg');"></span>
+  <div class="brand-strip"><span>Heute · KI</span><span>Feld 04</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Feld · KI</span>
+    <h1>Produktivität<br><span class="accent">statt Digitalisierung.</span></h1>
+    <p class="lead" style="margin-top: 24px;">KI ist nicht das nächste Tool. KI ist der nächste Hebel.</p>
+  </div>
+  <div class="num">11 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-zukunft-wettbewerb.jpg');"></span>
+  <div class="brand-strip"><span>Zukunft · 07</span><span>Wettbewerb</span></div>
+  <div class="wrap" style="padding-top: 8rem;">
+    <span class="kicker">Bewegung 07</span>
+    <div class="big-num" style="margin-top: 14px;">30–50%</div>
+    <h2 style="font-size: 2.6rem; margin-top: 8px;">Radikale Wettbewerbs­orientierung.</h2>
+    <ul class="clean" style="margin-top: 24px; max-width: 30ch;">
+      <li>Besser werden — messbar.</li>
+      <li>Wertschöpfung und Innovation fokussieren.</li>
+      <li>Wertschöpfungsferne Funktionen automatisieren.</li>
+    </ul>
+  </div>
+  <div class="num">12 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-zukunft-systemgestalter.jpg');"></span>
+  <div class="brand-strip"><span>Zukunft · 08</span><span>Ausbildung</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Bewegung 08</span>
+    <h1>Systems Design —<br><span class="accent">viel breiter.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Nicht Methoden-Anwender. Menschen, die ganze Systeme lesen, entwerfen und tragen.</p>
+  </div>
+  <div class="num">13 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-zukunft-innovation.jpg');"></span>
+  <div class="brand-strip"><span>Zukunft · 09</span><span>Innovation</span></div>
+  <div class="wrap" style="padding-top: 14rem;">
+    <span class="kicker">Bewegung 09</span>
+    <h1>Innovation —<br><span class="accent">als Geschäftsmodell.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Was hierzulande sonst niemand anbietet. Was den Unterschied macht.</p>
+  </div>
+  <div class="num">14 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-zukunft-buch.jpg');"></span>
+  <div class="brand-strip"><span>Zukunft · 10 · Buch</span><span>Höchstleistungs-Killer</span></div>
+  <div class="wrap" style="padding-top: 8rem;">
+    <span class="kicker">Bewegung 10 · Buch</span>
+    <h1><span class="accent">Höchstleistungs-<br>Killer.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Was unseren Firmen schadet — und was wir alle trotzdem tun. <strong>80 % Wirkung</strong> mit <strong>20 % anderem Blick.</strong></p>
+  </div>
+  <div class="num">15 / 16</div>
+</section>
+
+<section class="bg-image fullscreen hero-bg">
+  <span class="background dark" style="background-image: url('img/backgrounds/ai/bg-closing.jpg');"></span>
+  <div class="wrap aligncenter" style="padding-top: 14rem;">
+    <h1>Analyse<br>und Projekte<br><span class="accent">anders.</span></h1>
+    <p class="lead" style="margin: 32px auto 0;">Your Company — your-domain.com</p>
+  </div>
+  <div class="num">16 / 16</div>
+</section>
+
+</article>
+</main>
+<script src="https://cdn.jsdelivr.net/gh/webslides/webslides@1.5.0/static/js/webslides.js"></script>
+<script>window.ws = new WebSlides();</script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategie 2026 — Minimal Editorial (WebSlides)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/webslides/webslides@1.5.0/static/css/webslides.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@200;300;400;500;700&family=GT+Sectra&display=swap">
+<style>
+  :root { --ink: #111; --paper: #fff; --acc: #f25c0c; --muted: #777; }
+  body, html { font-family: 'Inter Tight', system-ui, sans-serif; background: var(--paper); color: var(--ink); font-feature-settings: 'ss01'; }
+  #webslides section { background: var(--paper); color: var(--ink); }
+  #webslides section h1, #webslides section h2 { font-family: 'Inter Tight', sans-serif; font-weight: 300; letter-spacing: -0.04em; line-height: 0.98; text-transform: none; margin: 0; }
+  h1.title { font-size: clamp(56px, 5.5vw, 96px); }
+  h2.title { font-size: clamp(40px, 4vw, 70px); }
+  .accent { color: var(--acc); font-weight: 500; }
+  .heavy { font-weight: 700; }
+  .meta-top { position: absolute; top: 24px; left: 5%; right: 5%; display: flex; justify-content: space-between; align-items: center; font-size: clamp(10px, 0.75vw, 13px); letter-spacing: 0.25em; text-transform: uppercase; color: var(--muted); z-index: 10; }
+  .num { position: absolute; bottom: 24px; left: 5%; font-size: clamp(10px, 0.7vw, 13px); letter-spacing: 0.2em; color: var(--muted); z-index: 10; }
+  .num span { color: var(--ink); font-weight: 500; }
+  .footer-r { position: absolute; bottom: 24px; right: 5%; font-size: clamp(10px, 0.7vw, 13px); letter-spacing: 0.2em; color: var(--muted); z-index: 10; }
+  .stage { position: absolute; left: 5%; right: 5%; top: 50%; transform: translateY(-50%); }
+  .lead { font-size: clamp(15px, 1.2vw, 20px); max-width: 38ch; line-height: 1.55; margin-top: 18px; color: var(--muted); font-weight: 400; }
+  .lead strong { color: var(--ink); font-weight: 600; }
+  .photo-band { position: absolute; left: 5%; right: 5%; top: 18%; bottom: 22%; background-size: cover; background-position: center; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: clamp(20px, 2vw, 36px); margin-top: 24px; }
+  .cell { border-top: 1px solid var(--ink); padding-top: 12px; }
+  .cell .n { font-size: clamp(10px, 0.8vw, 14px); color: var(--acc); letter-spacing: 0.2em; }
+  .cell h3 { font-family: 'Inter Tight', sans-serif; font-weight: 500; font-size: clamp(16px, 1.3vw, 22px); margin: 4px 0; letter-spacing: -0.02em; line-height: 1.2; }
+  .cell p { font-size: clamp(12px, 0.95vw, 16px); margin: 0; color: var(--muted); line-height: 1.55; }
+  .twin { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(30px, 4vw, 70px); align-items: center; }
+  .twin-photo { background-size: cover; background-position: center; aspect-ratio: 4/3; max-height: 70vh; }
+  .twin-photo.wide { aspect-ratio: 16/10; }
+  .label-tag { display: inline-block; font-size: clamp(11px, 0.85vw, 14px); letter-spacing: 0.3em; text-transform: uppercase; color: var(--acc); margin-bottom: 16px; font-weight: 500; }
+  .big-stat { font-size: clamp(64px, 6vw, 110px); font-weight: 300; letter-spacing: -0.05em; line-height: 1; color: var(--acc); }
+  .full-photo { position: absolute; inset: 0; background-size: cover; background-position: center; }
+  .full-photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(255,255,255,0.8) 75%, white 100%); }
+  .full-text { position: absolute; left: 6%; right: 6%; bottom: 12%; z-index: 5; }
+</style>
+</head>
+<body>
+<main role="main">
+<article id="webslides" class="vertical">
+
+<section>
+  <div class="meta-top"><span>Your Company</span><span>Strategiebild · 2026</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Mai 2026 · Strategiebild</span>
+        <h1 class="title">Wo wir<br>herkommen.<br>Wo wir stehen.<br><span class="accent">Wohin wir gehen.</span></h1>
+        <p class="lead">Drei Akte. <strong>Zehn Bewegungen.</strong> Ein Strategiebild.</p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-cover.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">01 <span>/ 16</span></div>
+  <div class="footer-r">Your Company</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Inhalt</span><span>Your Company 2026</span></div>
+  <div class="stage">
+    <span class="label-tag">Übersicht</span>
+    <h2 class="title">Drei Akte. <span class="accent">Zehn</span> Bewegungen.</h2>
+    <div class="grid-3" style="margin-top: 36px;">
+      <div class="cell"><div class="n">I</div><h3>Historie</h3><p>Lean · OKR · Agile · Our Method</p></div>
+      <div class="cell"><div class="n">II</div><h3>Heute</h3><p>Sechs Felder · drei Firmen · zwei Menschen</p></div>
+      <div class="cell"><div class="n">III</div><h3>Zukunft</h3><p>Competition · Systems Design · Innovation · Vision</p></div>
+    </div>
+  </div>
+  <div class="num">02 <span>/ 16</span></div>
+  <div class="footer-r">Inhalt</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Historie · 01</span><span>Wegmarke</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-historie-lean.jpg');"></div>
+      <div>
+        <span class="label-tag">Wegmarke 01</span>
+        <h2 class="title">Lean. Materialfluss.<br><span class="accent">Echte Workshops.</span></h2>
+        <p class="lead">Fluss und KAIZEN-Management als Fundament. <strong>Nicht als Methode auf Folie</strong>, sondern in der Halle.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">03 <span>/ 16</span></div>
+  <div class="footer-r">Historie</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Historie · 02</span><span>Wegmarke</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Wegmarke 02 · CCPM</span>
+        <h2 class="title">Nicht Serie —<br><span class="accent">sondern Sonder.</span></h2>
+        <p class="lead">Termintreue im deutschen Maschinenbau, wo jedes Projekt ein Unikat ist — und der Plan trotzdem hält.</p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-historie-ccpm.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">04 <span>/ 16</span></div>
+  <div class="footer-r">Historie</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Historie · 03</span><span>Wegmarke</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-historie-wohland.jpg');"></div>
+      <div>
+        <span class="label-tag">Wegmarke 03 · Organisation</span>
+        <h2 class="title">Wohland.<br><span class="accent">Wenn das alte Modell versagt.</span></h2>
+        <p class="lead">Management und Organisation neu gedacht, wenn die alten Bilder die heutige Komplexität nicht mehr halten.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">05 <span>/ 16</span></div>
+  <div class="footer-r">Historie</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Historie · 04</span><span>Wegmarke</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Wegmarke 04</span>
+        <h2 class="title">Agile —<br>und die <span class="accent">agile Falle.</span></h2>
+        <p class="lead">OpenSpace-Trafo statt Frameworks. Bewegung dort, wo Methodik längst zur Bremse geworden ist.</p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-historie-agile.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">06 <span>/ 16</span></div>
+  <div class="footer-r">Historie</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Historie · 05</span><span>Eigenes</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-historie-kaulquappe.jpg');"></div>
+      <div>
+        <span class="label-tag">Wegmarke 05 · Unser Beitrag</span>
+        <h1 class="title" style="font-size: 5.5rem;"><span class="accent">Our Method.</span></h1>
+        <p class="lead">Ein alternatives Veränderungs- und Führungsmodell. Methodenkritische Projekte mit <strong>Metaframework</strong>.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">07 <span>/ 16</span></div>
+  <div class="footer-r">Historie</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Stand heute</span><span>Akt II</span></div>
+  <div class="stage">
+    <span class="label-tag">Akt II</span>
+    <h2 class="title">Sechs Felder. <span class="accent">Drei Firmen. Zwei Menschen.</span></h2>
+    <div class="grid-3" style="margin-top: 28px; grid-template-columns: repeat(3, 1fr); gap: 24px;">
+      <div class="cell"><div class="n">01 · Strategy</div><h3>Smart decisions.</h3><p>Lösen Probleme — mit wenig Macht.</p></div>
+      <div class="cell"><div class="n">02 · Service</div><h3>Mehr zufriedene Kunden.</h3><p>Und mehr Ertrag.</p></div>
+      <div class="cell"><div class="n">03 · Workflow</div><h3>Flow at scale.</h3><p>Lean as intended.</p></div>
+      <div class="cell"><div class="n">04 · KI</div><h3>Produktivität statt Digitalisierung.</h3><p>Nächster Hebel — nicht nächstes Tool.</p></div>
+      <div class="cell"><div class="n">05 · (Interim · ERP)</div><h3>Wenn nichts anspringt.</h3><p>Führung oder ERP — manchmal als Bremse.</p></div>
+      <div class="cell"><div class="n">06 · Strategie-Wechsel</div><h3>Kapa — auch extern.</h3><p>G&amp;P · coolab · meocon · Marco · Kim.</p></div>
+    </div>
+  </div>
+  <div class="num">08 <span>/ 16</span></div>
+  <div class="footer-r">Stand heute</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Today · Strategy</span><span>Feld 01</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-heute-oe.jpg');"></div>
+      <div>
+        <span class="label-tag">Section · Strategy</span>
+        <h2 class="title">Mit wenig Macht.<br><span class="accent">Mit den richtigen<br>Menschen am Tisch.</span></h2>
+      </div>
+    </div>
+  </div>
+  <div class="num">09 <span>/ 16</span></div>
+  <div class="footer-r">Heute</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Today · Workflow</span><span>Feld 03</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Section · Workflow</span>
+        <h2 class="title">Produkt <span class="accent">fließt.</span></h2>
+        <p class="lead">Lean, wie es gemeint war — vom Materialfluss bis zur Führungslinie.</p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-heute-realean.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">10 <span>/ 16</span></div>
+  <div class="footer-r">Heute</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Heute · KI</span><span>Feld 04</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-heute-ki.jpg');"></div>
+      <div>
+        <span class="label-tag">Feld · KI</span>
+        <h2 class="title">Produktivität.<br><span class="accent">Nicht Digitalisierung.</span></h2>
+        <p class="lead">KI ist nicht das nächste Tool. <strong>KI ist der nächste Hebel.</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="num">11 <span>/ 16</span></div>
+  <div class="footer-r">Heute</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Zukunft · 07</span><span>Wettbewerb</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Bewegung 07</span>
+        <div class="big-stat">30–50%</div>
+        <h2 class="title" style="font-size: 2.4rem; margin-top: 8px;">Radikale Wettbewerbs­orientierung.</h2>
+        <ul style="margin-top: 18px; list-style: none; padding: 0; color: var(--muted); font-size: 0.95rem;">
+          <li style="margin-bottom: 8px;">— Besser werden, <strong style="color: var(--ink);">messbar.</strong></li>
+          <li style="margin-bottom: 8px;">— Wertschöpfung und Innovation <strong style="color: var(--ink);">fokussieren.</strong></li>
+          <li>— Wertschöpfungsferne Funktionen <strong style="color: var(--ink);">automatisieren.</strong></li>
+        </ul>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-zukunft-wettbewerb.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">12 <span>/ 16</span></div>
+  <div class="footer-r">Zukunft</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Zukunft · 08</span><span>Ausbildung</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-zukunft-systemgestalter.jpg');"></div>
+      <div>
+        <span class="label-tag">Bewegung 08</span>
+        <h2 class="title">Systems Design —<br><span class="accent">viel breiter.</span></h2>
+        <p class="lead">Nicht Methoden-Anwender. <strong>Menschen, die ganze Systeme lesen, entwerfen und tragen.</strong></p>
+      </div>
+    </div>
+  </div>
+  <div class="num">13 <span>/ 16</span></div>
+  <div class="footer-r">Zukunft</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Zukunft · 09</span><span>Innovation</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <span class="label-tag">Bewegung 09</span>
+        <h2 class="title">Innovation —<br><span class="accent">als Geschäftsmodell.</span></h2>
+        <p class="lead">Was hierzulande sonst niemand anbietet. <strong>Was den Unterschied macht.</strong></p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-zukunft-innovation.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">14 <span>/ 16</span></div>
+  <div class="footer-r">Zukunft</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Zukunft · 10 · Buch</span><span>Höchstleistungs-Killer</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-zukunft-buch.jpg');"></div>
+      <div>
+        <span class="label-tag">Bewegung 10 · Buch</span>
+        <h2 class="title"><span class="accent">Höchstleistungs-<br>Killer.</span></h2>
+        <p class="lead">Was unseren Firmen schadet — und was wir alle trotzdem tun. <strong>80 % Wirkung</strong> mit <strong>20 % anderem Blick.</strong> Analyse und Projekte anders.</p>
+      </div>
+    </div>
+  </div>
+  <div class="num">15 <span>/ 16</span></div>
+  <div class="footer-r">Zukunft · Buch</div>
+</section>
+
+<section>
+  <div class="meta-top"><span>Schluss</span><span>Your Company 2026</span></div>
+  <div class="stage">
+    <div class="twin">
+      <div>
+        <h1 class="title">Analyse<br>und Projekte<br><span class="accent">anders.</span></h1>
+        <p class="lead">Your Company — <strong>your-domain.com</strong></p>
+      </div>
+      <div class="twin-photo" style="background-image: url('img/backgrounds/ai/bg-closing.jpg');"></div>
+    </div>
+  </div>
+  <div class="num">16 <span>/ 16</span></div>
+  <div class="footer-r">Your Company 2026</div>
+</section>
+
+</article>
+</main>
+<script src="https://cdn.jsdelivr.net/gh/webslides/webslides@1.5.0/static/js/webslides.js"></script>
+<script>window.ws = new WebSlides();</script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+{
+  "name": "ai-ms365",
+  "version": "1.0.0",
+  "description": "Microsoft 365 (Outlook, Calendar, Teams, SharePoint, OneDrive) via @softeria/ms-365-mcp-server. Cross-platform wrapper handles npx differences between macOS/Linux and Windows. Credentials loaded from ~/.claude/.env/ms365.env.",
+  "keywords": ["microsoft365", "ms365", "outlook", "calendar", "teams", "sharepoint", "graph-api", "mcp"],
+  "license": "MIT"
+}

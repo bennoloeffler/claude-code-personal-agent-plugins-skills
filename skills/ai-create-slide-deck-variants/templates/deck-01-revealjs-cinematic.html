@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Strategie 2026 — Cinematic (Reveal.js)</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fraunces:wght@400;700&display=swap">
+<style>
+  :root {
+    --vs-blue: #0b3a5b;
+    --vs-warm: #d68a2a;
+    --vs-ink: #0f1115;
+  }
+  .reveal { font-family: 'Inter', system-ui, sans-serif; font-size: 30px; }
+  .reveal h1, .reveal h2, .reveal h3 { font-family: 'Fraunces', serif; font-weight: 700; letter-spacing: -0.02em; text-transform: none; margin: 0; text-shadow: 0 1px 18px rgba(0,0,0,0.5), 0 0 2px rgba(0,0,0,0.3); }
+  .reveal h1 { font-size: 2.9em; line-height: 1.02; }
+  .reveal h2 { font-size: 2em; line-height: 1.08; }
+  .reveal p, .reveal li { font-weight: 400; font-size: 0.82em; line-height: 1.5; text-shadow: 0 1px 10px rgba(0,0,0,0.5); }
+  .reveal section { color: #fff; }
+  .reveal .slides section[data-background-image]::after {
+    content: ''; position: absolute; inset: 0; pointer-events: none;
+    background:
+      linear-gradient(90deg, rgba(0,0,0,0.72) 0%, rgba(0,0,0,0.42) 38%, rgba(0,0,0,0.12) 60%, transparent 80%),
+      linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.45) 100%);
+    z-index: -1;
+  }
+  .stage { position: absolute; left: 6%; right: 6%; bottom: 8%; text-align: left; }
+  .stage.center { top: 50%; transform: translateY(-50%); bottom: auto; }
+  .kicker { display: inline-block; font-size: 0.55em; letter-spacing: 0.3em; text-transform: uppercase;
+            padding: 6px 14px; border: 1px solid rgba(255,255,255,0.55); border-radius: 100px;
+            margin-bottom: 18px; backdrop-filter: blur(8px); background: rgba(0,0,0,0.35); }
+  .brand-bar { position: absolute; left: 6%; top: 6%; font-size: 0.55em; letter-spacing: 0.25em; opacity: 0.85; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .footer-num { position: absolute; right: 6%; bottom: 4%; font-size: 0.5em; opacity: 0.7; letter-spacing: 0.2em; text-shadow: 0 1px 6px rgba(0,0,0,0.6); }
+  .lead { font-size: 1em; max-width: 26ch; font-weight: 400; opacity: 1; margin-top: 18px; text-shadow: 0 1px 12px rgba(0,0,0,0.6); }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 18px; margin-top: 22px; }
+  .card { padding: 16px; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 8px; backdrop-filter: blur(10px); }
+  .card h3 { font-size: 0.78em; margin: 0 0 6px 0; color: var(--vs-warm); font-family: 'Fraunces', serif; }
+  .card p { font-size: 0.55em; margin: 0; opacity: 0.85; line-height: 1.45; }
+  .accent { color: var(--vs-warm); }
+  .brand-mark { font-family: 'Fraunces', serif; font-weight: 700; letter-spacing: 0.04em; }
+  ul.clean { list-style: none; padding: 0; }
+  ul.clean li { padding-left: 24px; position: relative; margin-bottom: 10px; font-size: 0.75em; }
+  ul.clean li::before { content: '—'; position: absolute; left: 0; color: var(--vs-warm); font-weight: 700; }
+  .big-num { font-family: 'Fraunces', serif; font-size: 3.5em; line-height: 0.9; color: var(--vs-warm); opacity: 0.85; }
+
+  /* Synopse — Orbit-Galaxie */
+  .synopse-bg {
+    background:
+      radial-gradient(ellipse 60% 70% at 50% 50%, rgba(214,138,42,0.22) 0%, rgba(214,138,42,0.06) 30%, transparent 60%),
+      radial-gradient(circle at 50% 50%, #15171c 0%, #0a0c10 45%, #04050a 100%) !important;
+  }
+  .synopse-frame { position: relative; width: 1600px; height: 900px; margin: 0; }
+  .orbit-wrap { position: absolute; inset: 0; pointer-events: none; }
+  .orbit-circle { position: absolute; top: 50%; left: 50%; border: 1px dashed rgba(255,255,255,0.10); border-radius: 100%; transform: translate(-50%, -50%); }
+  .orbit-c-1 { width: 520px; height: 520px; }
+  .orbit-c-2 { width: 720px; height: 720px; border-color: rgba(214,138,42,0.2); }
+  .orbit-c-3 { width: 820px; height: 820px; border-color: rgba(214,138,42,0.35); border-style: solid; opacity: 0.6; }
+  .orbit-spoke { position: absolute; top: 50%; left: 50%; width: 1px; height: 410px;
+    background: linear-gradient(to top, rgba(214,138,42,0) 0%, rgba(214,138,42,0.15) 50%, rgba(214,138,42,0) 100%);
+    transform-origin: top center;
+    transform: translate(-50%, 0) rotate(var(--a)); }
+  .ring-label { position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(var(--a)) translateY(calc(-1 * var(--r))) rotate(calc(-1 * var(--a)));
+    font-size: 0.4em; letter-spacing: 0.45em; text-transform: uppercase; font-weight: 700;
+    padding: 4px 12px; background: #05060a; z-index: 6; white-space: nowrap; }
+  .ring-label.rl-1 { color: rgba(255,255,255,0.55); border: 1px solid rgba(255,255,255,0.18); }
+  .ring-label.rl-2 { color: rgba(214,138,42,0.95); border: 1px solid rgba(214,138,42,0.4); }
+  .ring-label.rl-3 { color: var(--vs-warm); border: 1px solid var(--vs-warm); background: #07080d; }
+
+  .orbit-center { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; z-index: 10; }
+  .orbit-eyebrow { font-size: 0.4em; letter-spacing: 0.55em; text-transform: uppercase; opacity: 0.6; margin-bottom: 16px; color: var(--vs-warm); }
+  .orbit-stat-big { font-family: 'Fraunces', serif; font-size: 3.8em; font-weight: 700; color: var(--vs-warm); line-height: 0.92; letter-spacing: -0.03em;
+    text-shadow: 0 0 32px rgba(214,138,42,0.5), 0 2px 8px rgba(0,0,0,0.7); }
+  .orbit-stat-sub { font-size: 0.42em; margin-top: 12px; max-width: 22ch; margin-left: auto; margin-right: auto; line-height: 1.5; opacity: 0.85; font-weight: 300; letter-spacing: 0.01em; }
+  .orbit-stat-sub strong { color: var(--vs-warm); font-weight: 500; }
+
+  .orbit-item { position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) rotate(var(--a)) translateY(calc(-1 * var(--r))) rotate(calc(-1 * var(--a)));
+    white-space: nowrap; font-size: 0.5em; font-weight: 500; letter-spacing: 0.03em;
+    padding: 7px 16px; border-radius: 100px; backdrop-filter: blur(10px); z-index: 5; }
+  .orbit-item.h { color: rgba(255,255,255,0.94); background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.22); }
+  .orbit-item.n { color: #fff; background: rgba(214,138,42,0.12); border: 1px solid rgba(214,138,42,0.5); }
+  .orbit-item.z { color: var(--vs-warm); font-weight: 600; background: rgba(214,138,42,0.22);
+    border: 1px solid rgba(214,138,42,0.85); box-shadow: 0 0 24px rgba(214,138,42,0.25), inset 0 0 12px rgba(214,138,42,0.1); }
+
+  .synopse-bg .footer-num { top: 855px; right: 60px; bottom: auto; left: auto; }
+  .partner-panel { position: absolute; left: 60px; top: 760px; z-index: 20;
+    padding: 12px 18px; border: 1px solid rgba(214,138,42,0.42);
+    background: rgba(214,138,42,0.06); border-radius: 4px; backdrop-filter: blur(10px); }
+  .partner-panel .pp-label { font-size: 0.4em; letter-spacing: 0.38em; text-transform: uppercase; color: var(--vs-warm); opacity: 0.9; margin-bottom: 8px; }
+  .partner-panel .pp-line { font-size: 0.5em; opacity: 0.9; margin-top: 4px; font-weight: 400; }
+  .partner-panel .pp-key { display: inline-block; min-width: 5.5em; color: rgba(214,138,42,0.85); font-weight: 600; font-size: 0.85em; letter-spacing: 0.15em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="reveal"><div class="slides">
+
+<section data-background-image="img/backgrounds/ai/bg-cover.jpg" data-background-size="cover" data-background-position="center">
+  <div class="brand-bar"><span class="brand-mark">YOUR COMPANY</span> · STRATEGY 2026</div>
+  <div class="stage">
+    <span class="kicker">Strategische Ausrichtung</span>
+    <h1>Wo wir herkommen.<br>Wo wir stehen.<br><span class="accent">Wohin wir gehen.</span></h1>
+    <p class="lead" style="margin-top: 24px;">Drei Akte. Zehn Bewegungen. Strategy 2026.</p>
+  </div>
+  <div class="footer-num">01 / 16</div>
+</section>
+
+<section data-background-color="#0b3a5b">
+  <div class="stage center">
+    <span class="kicker">Drei Akte</span>
+    <h2 style="margin-bottom: 48px;">Historie · Stand heute · Zukunft</h2>
+    <div class="grid-3">
+      <div class="card"><h3>1 — Historie</h3><p>From materials flow to our integrated approach. Fünf Wegmarken, die uns geprägt haben.</p></div>
+      <div class="card"><h3>2 — Stand heute</h3><p>Sechs Felder, in denen wir Wirkung erzeugen. Drei Firmen. Zwei Menschen.</p></div>
+      <div class="card"><h3>3 — Zukunft</h3><p>Vier Bewegungen — von radikaler Wettbewerbsorientierung bis zum Buch.</p></div>
+    </div>
+  </div>
+  <div class="footer-num">02 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-historie-lean.jpg" data-background-size="cover">
+  <div class="brand-bar">HISTORIE · 1</div>
+  <div class="stage">
+    <span class="kicker">Wegmarke 01</span>
+    <h2>Lean, Materialfluss,<br>6 Sigma — <span class="accent">und echte Workshops.</span></h2>
+    <p class="lead">Fluss und KAIZEN-Management als Fundament. Nicht als Methode auf Folie, sondern in der Halle.</p>
+  </div>
+  <div class="footer-num">03 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-historie-ccpm.jpg" data-background-size="cover">
+  <div class="brand-bar">HISTORIE · 2</div>
+  <div class="stage">
+    <span class="kicker">Wegmarke 02</span>
+    <h2>CCPM:<br>nicht Serie — <span class="accent">sondern Sonder.</span></h2>
+    <p class="lead">Termintreue im deutschen Maschinenbau. Wo jedes Projekt ein Unikat ist und der Plan trotzdem hält.</p>
+  </div>
+  <div class="footer-num">04 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-historie-wohland.jpg" data-background-size="cover">
+  <div class="brand-bar">HISTORIE · 3</div>
+  <div class="stage">
+    <span class="kicker">Wegmarke 03</span>
+    <h2>Wohland —<br><span class="accent">wenn das alte Modell versagt.</span></h2>
+    <p class="lead">Management und Organisation neu gedacht. Wenn die alten Bilder die heutige Komplexität nicht mehr halten.</p>
+  </div>
+  <div class="footer-num">05 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-historie-agile.jpg" data-background-size="cover">
+  <div class="brand-bar">HISTORIE · 4</div>
+  <div class="stage">
+    <span class="kicker">Wegmarke 04</span>
+    <h2>Agile —<br>und <span class="accent">die agile Falle.</span></h2>
+    <p class="lead">OpenSpace-Trafo statt Frameworks. Bewegung, wo Methodik längst zur Bremse geworden ist.</p>
+  </div>
+  <div class="footer-num">06 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-historie-kaulquappe.jpg" data-background-size="cover">
+  <div class="brand-bar">HISTORIE · 5</div>
+  <div class="stage">
+    <span class="kicker">Wegmarke 05</span>
+    <h2><span class="accent">Our Method.</span></h2>
+    <p class="lead">Ein alternatives Veränderungs- und Führungsmodell. Methodenkritische Projekte mit Metaframework. Unser Beitrag.</p>
+  </div>
+  <div class="footer-num">07 / 16</div>
+</section>
+
+<section data-background-color="#0f1115">
+  <div class="stage center">
+    <span class="kicker">Stand heute</span>
+    <h2 style="margin-bottom: 28px;">Sechs Felder.<br><span class="accent">Drei Firmen. Zwei Menschen.</span></h2>
+    <div class="grid-3" style="margin-top: 36px;">
+      <div class="card"><h3>Strategy</h3><p>Smart decisions solve problems — with minimal overhead.</p></div>
+      <div class="card"><h3>Service</h3><p>Mehr zufriedene Kunden und mehr Ertrag.</p></div>
+      <div class="card"><h3>Workflow</h3><p>Flow at scale.</p></div>
+      <div class="card"><h3>KI</h3><p>Produktivität statt Digitalisierung.</p></div>
+      <div class="card"><h3>(Interim) · (ERP)</h3><p>Wenn Führung nicht anspringt. Wenn das ERP zum Höchstleistungs-Killer wird.</p></div>
+      <div class="card"><h3>Strategie-Wechsel</h3><p>Kapa — auch extern. G&amp;P · coolab · meocon. Marco Claus · Kim.</p></div>
+    </div>
+  </div>
+  <div class="footer-num">08 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-heute-oe.jpg" data-background-size="cover">
+  <div class="brand-bar">STAND HEUTE · OE-TRAFO</div>
+  <div class="stage">
+    <span class="kicker">Feld 01</span>
+    <h2>Strategy.<br><span class="accent">Smart decisions<br>solve problems.</span></h2>
+    <p class="lead">Mit wenig Macht — und mit den richtigen Menschen am Tisch.</p>
+  </div>
+  <div class="footer-num">09 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-heute-realean.jpg" data-background-size="cover">
+  <div class="brand-bar">TODAY · Workflow</div>
+  <div class="stage">
+    <span class="kicker">Feld 03</span>
+    <h2>Workflow.<br><span class="accent">Flow at scale.</span></h2>
+    <p class="lead">Lean, wie es gemeint war — vom Materialfluss bis zur Führungslinie.</p>
+  </div>
+  <div class="footer-num">10 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-heute-ki.jpg" data-background-size="cover">
+  <div class="brand-bar">STAND HEUTE · KI</div>
+  <div class="stage">
+    <span class="kicker">Feld 04</span>
+    <h2>KI.<br><span class="accent">Produktivität statt Digitalisierung.</span></h2>
+    <p class="lead">Nicht das nächste Tool. Sondern der nächste Hebel.</p>
+  </div>
+  <div class="footer-num">11 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-zukunft-wettbewerb.jpg" data-background-size="cover">
+  <div class="brand-bar">ZUKUNFT · 7</div>
+  <div class="stage">
+    <div class="big-num">30–50%</div>
+    <h2 style="margin-top: 12px;">Radikale<br>Wettbewerbsorientierung.</h2>
+    <ul class="clean" style="margin-top: 24px; max-width: 28ch;">
+      <li>Besser werden — messbar.</li>
+      <li>Wertschöpfung und Innovation fokussieren.</li>
+      <li>Wertschöpfungsferne Funktionen automatisieren.</li>
+    </ul>
+  </div>
+  <div class="footer-num">12 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-zukunft-systemgestalter.jpg" data-background-size="cover">
+  <div class="brand-bar">ZUKUNFT · 8</div>
+  <div class="stage">
+    <span class="kicker">Ausbildung</span>
+    <h2>Systems Design —<br><span class="accent">viel breiter.</span></h2>
+    <p class="lead">Nicht Methoden-Anwender. Sondern Menschen, die ganze Systeme lesen, entwerfen und tragen.</p>
+  </div>
+  <div class="footer-num">13 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-zukunft-innovation.jpg" data-background-size="cover">
+  <div class="brand-bar">ZUKUNFT · 9</div>
+  <div class="stage">
+    <span class="kicker">Innovation</span>
+    <h2>Innovation —<br><span class="accent">als Geschäftsmodell.</span></h2>
+    <p class="lead">Was hierzulande sonst niemand anbietet. Was den Unterschied macht.</p>
+  </div>
+  <div class="footer-num">14 / 16</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-zukunft-buch.jpg" data-background-size="cover">
+  <div class="brand-bar">ZUKUNFT · 10 · BUCH</div>
+  <div class="stage">
+    <span class="kicker">Strategische Ausrichtung</span>
+    <h2><span class="accent">Höchstleistungs-Killer.</span></h2>
+    <p class="lead">Was unseren Firmen schadet — und was wir alle trotzdem tun. 80% Wirkung mit 20% anderem Blick. Analyse und Projekte anders.</p>
+  </div>
+  <div class="footer-num">15 / 16</div>
+</section>
+
+<section data-background-color="#04050a" class="synopse-bg">
+<div class="synopse-frame">
+
+  <div class="orbit-wrap">
+    <!-- Visible orbit rings -->
+    <div class="orbit-circle orbit-c-1"></div>
+    <div class="orbit-circle orbit-c-2"></div>
+    <div class="orbit-circle orbit-c-3"></div>
+  </div>
+
+  <!-- Center bullseye -->
+  <div class="orbit-center">
+    <div class="orbit-eyebrow">Das Ziel</div>
+    <div class="orbit-stat-big">+50%</div>
+    <div class="orbit-stat-sub"><strong>besser.</strong> Strategie. Wertschöpfung, Innovation. Automatisierung.</div>
+  </div>
+
+  <!-- Inner ring · HISTORIE (5 items, 72° apart starting at top) -->
+  <span class="orbit-item h" style="--a:0deg; --r:260px">Lean &amp; Fluss</span>
+  <span class="orbit-item h" style="--a:72deg; --r:260px">PPS</span>
+  <span class="orbit-item h" style="--a:144deg; --r:260px">CCPM</span>
+  <span class="orbit-item h" style="--a:216deg; --r:260px">Wohland</span>
+  <span class="orbit-item h" style="--a:288deg; --r:260px">Agile &amp; Falle</span>
+
+  <!-- Middle ring · HEUTE (4 items, X-pattern offset 45° from outer cardinals) -->
+  <span class="orbit-item n" style="--a:45deg; --r:360px">Trafo</span>
+  <span class="orbit-item n" style="--a:135deg; --r:360px">Service</span>
+  <span class="orbit-item n" style="--a:225deg; --r:360px">Workflow</span>
+  <span class="orbit-item n" style="--a:315deg; --r:360px">KI</span>
+
+  <!-- Outer ring · ZUKUNFT (4 items at cardinal directions) -->
+  <span class="orbit-item z" style="--a:0deg; --r:410px">Systems Design</span>
+  <span class="orbit-item z" style="--a:90deg; --r:410px">Innovation</span>
+  <span class="orbit-item z" style="--a:180deg; --r:410px">Höchstleistungs-Killer</span>
+  <span class="orbit-item z" style="--a:270deg; --r:410px">Interim-Führung</span>
+
+  <div class="partner-panel">
+    <div class="pp-label">Mit externer Kapa</div>
+    <div class="pp-line"><span class="pp-key">Firmen</span> &nbsp; G&amp;P &middot; coolab &middot; meocon</div>
+    <div class="pp-line"><span class="pp-key">Menschen</span> &nbsp; Marco &middot; Kim</div>
+  </div>
+
+  <div class="footer-num">16 / 17</div>
+</div>
+</section>
+
+<section data-background-image="img/backgrounds/ai/bg-closing.jpg" data-background-size="cover">
+  <div class="stage center" style="text-align: center;">
+    <h1 style="font-size: 2.4em;">Analyse und Projekte<br>anders?<br><span class="accent">Ja…</span></h1>
+    <p class="lead" style="margin: 24px auto 0;">Your Company.</p>
+  </div>
+  <div class="footer-num">17 / 17</div>
+</section>
+
+</div></div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script>
+  Reveal.initialize({
+    hash: true, controls: true, progress: true, slideNumber: false,
+    transition: 'fade', backgroundTransition: 'fade',
+    width: 1600, height: 900,
+  });
+</script>
+</body>
+</html>

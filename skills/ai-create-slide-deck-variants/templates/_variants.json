@@ -1,0 +1,86 @@
+{
+  "variants": [
+    {
+      "id": "01",
+      "framework": "Reveal.js",
+      "style": "Cinematic Dark",
+      "when": "Wenn die Bilder die Story tragen sollen -- kinematische Stimmung, dunkel, atmospaerisch.",
+      "file": "deck-01-revealjs-cinematic.html",
+      "available": true
+    },
+    {
+      "id": "02",
+      "framework": "Reveal.js",
+      "style": "Editorial / Magazine",
+      "when": "Wenn Tiefgang gezeigt werden soll -- Lesefluss-orientiert, Magazin-Layout.",
+      "file": null,
+      "available": false,
+      "note": "Vorlage nicht mitgeliefert -- bestehende Variante kopieren und CSS-Vars + Schriften tauschen."
+    },
+    {
+      "id": "03",
+      "framework": "Reveal.js",
+      "style": "House style",
+      "when": "Wenn Brand-Kohaerenz wichtig ist und ein eigener Stil etabliert werden soll.",
+      "file": null,
+      "available": false,
+      "note": "Vorlage nicht mitgeliefert -- bestehende Variante kopieren und eigene Farben/Typo einsetzen."
+    },
+    {
+      "id": "04",
+      "framework": "Reveal.js",
+      "style": "Asymmetric & Bold",
+      "when": "Wenn das Deck disruptiv wirken soll -- Statement-Charakter.",
+      "file": null,
+      "available": false
+    },
+    {
+      "id": "05",
+      "framework": "Reveal.js",
+      "style": "Swiss Grid",
+      "when": "Wenn Klarheit/Struktur wichtiger ist als Stimmung.",
+      "file": null,
+      "available": false
+    },
+    {
+      "id": "06",
+      "framework": "WebSlides",
+      "style": "Full-bleed Cinematic",
+      "when": "Wenn Vortrags-Atmosphaere dominieren soll -- vollflaechige Hintergruende.",
+      "file": "deck-06-webslides-fullbleed.html",
+      "available": true
+    },
+    {
+      "id": "07",
+      "framework": "WebSlides",
+      "style": "Split-screen Editorial",
+      "when": "Wenn Foto+Text gleichgewichtig sind -- Magazinseite-Anmutung.",
+      "file": "deck-07-webslides-split.html",
+      "available": true
+    },
+    {
+      "id": "08",
+      "framework": "WebSlides",
+      "style": "Dark Cinematic",
+      "when": "Wenn Premium-Premiere-Wirkung gewuenscht ist.",
+      "file": "deck-08-webslides-dark.html",
+      "available": true
+    },
+    {
+      "id": "09",
+      "framework": "WebSlides",
+      "style": "Bold Typography",
+      "when": "Wenn Headlines die Buehne sind -- Typografie als Hauptelement.",
+      "file": "deck-09-webslides-bold.html",
+      "available": true
+    },
+    {
+      "id": "10",
+      "framework": "WebSlides",
+      "style": "Minimal Editorial",
+      "when": "Wenn Zurueckhaltung mehr Wirkung hat als Lautstaerke.",
+      "file": "deck-10-webslides-minimal.html",
+      "available": true
+    }
+  ]
+}

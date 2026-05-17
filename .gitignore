@@ -1,18 +1,28 @@
-# Runtime state from the heartbeat-timer plugin (do not commit)
+# Runtime state from the ai-heartbeat-timer plugin (do not commit)
 .heartbeat-timer/
-timer.md
+.ai-heartbeat-timer/
+# User's project-level timer schedule (only at repo root, NOT the plugin template):
+/timer.md
 
 # Lock files written by plugins
 *.lock
+
+# Skill install markers (written by preflight at runtime; may contain hostname/path)
+SKILL_INSTALLED.md
+SKILL_INSTALL_FAILED.md
 
 # Node dependencies (each MCP server must run `bun install` / `npm install`)
 node_modules/
 
 # Per-user config and secrets (never commit)
+# (User secrets live at ~/.claude/.env/<plugin>.env outside the repo;
+#  these patterns only catch accidental in-repo copies.)
 .env
 .env.local
 *.secrets.env
 *-auth.json
+ms365.env
+*.env.local
 
 # OS / editor
 .DS_Store
