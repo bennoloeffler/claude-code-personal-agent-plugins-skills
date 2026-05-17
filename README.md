@@ -14,12 +14,39 @@ Every plugin and skill in this marketplace starts with the **`ai-`** prefix — 
 
 ## Install
 
+Add the marketplace using `/plugin marketplace add`, followed by `<owner>/<repo>` (GitHub form) or a URL:
+
 ```
-/plugin marketplace add <owner>/<this-repo>
+/plugin marketplace add bennoloeffler/claude-code-personal-agent-plugins-skills
+```
+
+Then install plugins via:
+
+```
+/plugin install <plugin-name>@ai-plugins
+```
+
+For example:
+
+```
 /plugin install ai-heartbeat-timer@ai-plugins
 /plugin install ai-ms365@ai-plugins
 /plugin install ai-create@ai-plugins
 ```
+
+List what is available in the marketplace:
+
+```
+/plugin marketplace list
+```
+
+Pull updates:
+
+```
+/plugin marketplace update ai-plugins
+```
+
+> The marketplace name `ai-plugins` comes from `.claude-plugin/marketplace.json` in this repo — it's what you use as the `@<marketplace>` suffix on install.
 
 After the marketplace is added, you also get the bundled skills (`/ai-timer`, `/ai-ms365`, `/ai-ms365-login`, `/ai-create-*`) and commands by default.
 
